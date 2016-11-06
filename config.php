@@ -6,7 +6,7 @@
 
 <body>
 	<?php
-	$conn=mysqli_connect('localhost', 'root', '','test');
+	$conn=mysqli_connect('localhost', 'root', '','user_data');
 if(!$conn)
 {
 	die("failed connection:".mysqli_connect_error());

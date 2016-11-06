@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<title> Login to NoteShare</title>
+    
+    <link rel="icon" href="noteshare_icon.png">
+     <link rel="stylesheet" type="text/css" href="log.css">
+ 
+<title>Login To NoteShare </title>
+<link rel="stylesheet" type="text/css" href="login.css"/>
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Basic|Fjalla+One|Fredoka+One|Fruktur|Rock+Salt|Voltaire" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Basic|Cantarell|Fjalla+One|Fredoka+One|Fruktur|Rock+Salt|Voltaire" rel="stylesheet">
 </head>
-
 <body>
-	<h1 align="center">NoteShare</h1>
-		<form action="login.php" method="post" align="center">
-			<label>USERNAME <input type="text" name="usernamel"></input></label>
-			<br>
-			<label>PASSWORD <input type="password" name="passwordl"></input></label>
-			<br>
-			<input type="submit" value="Login" name="login">
-		</form>
-</body>
+    <h1 class="header"><a href="gb.html">NoteShare</a></h1>
 
+<form id="msform" action="loggingin.php" method="post">
+ 
+  <!-- fieldsets -->
+  <fieldset>
+    <h2 class="fs-title">Login to NoteShare</h2>
+    <span class="errors"></span>
+    <input type="text" name="email" placeholder="Email" required/>
+    <input type="password" name="pass" placeholder="Password" required/>
+    
+    
+    
+    <input type="submit" name="next" class="next action-button" value=Login /><br>
+    <a href="signup.html">Dont have an account? Click here to sign-up</a>
+    
+  </fieldset>
+  
+</form>
+
+
+</body>
 </html>

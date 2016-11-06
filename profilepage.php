@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,20 +14,21 @@
     <a href="#" class="dropbtn">Profile</a>
     <div class="dropdown-content">
       <a href="#">Settings</a>
-      <a href="#">Logout</a>
+      <a href="logout.php">Logout</a>
     </div>
   </li>
 </ul>
 
 <div class="sidebar">
-	<a href="dashboard.html" target="iframe_a">Dashboard</a>
-	<a href="upload.html" target="iframe_a">Upload</a>
-	<a href="notes.html" target="iframe_a">Notes</a>
+	<a href="dashboard.php" target="iframe_a">Dashboard</a>
+	<a href="index1.php" target="iframe_a">Upload</a>
+	<a href="view.php" target="iframe_a">Notes</a>
+  <a href="viewuploads.php" target="iframe_a">Upload History</a>
 	<a href="discussion.html" target="iframe_a">Discussion</a>
-	<a href="articles.html" target="iframe_a">Articles</a>
+	
 	
 </div>
-<iframe class="ifr" height="100%" width="100%" src="dashboard.html" name="iframe_a"></iframe> 
+<iframe class="ifr" height="100%" width="84%" src="dashboard.php" name="iframe_a"></iframe> 
 </body>
 
 
