@@ -1,8 +1,12 @@
 <?php
 	session_start();
+	include_once 'config.php';
 	$name="";
 	if(isset($_SESSION['name']))
 		$name=$_SESSION['name'];
+	$sql="SELECT * FROM tbl_uploads WHERE username='$name'";
+	$result_set=mysqli_query($conn,$sql);
+    $num_rows=mysqli_num_rows($result_set);
 
 ?>
 <!DOCTYPE html>
@@ -17,7 +21,7 @@
 			Welcome!.<br>
 			<h3 class="recent">Recent Activity:<br><hr width="100%"></h3>
 			
-			<br>Nothing
+			<br><?php print "$num_rows  "?>Uploads. 
 			
 		</div>
 		
