@@ -1,5 +1,9 @@
 <?php
 include_once 'config.php';
+session_start();
+$name='';
+if(isset($_SESSION['name']))
+	$name=$_SESSION['name'];
 if(isset($_POST['btn-upload']))
 {    
      
@@ -22,7 +26,7 @@ if(isset($_POST['btn-upload']))
 	if(move_uploaded_file($file_loc,$folder.$final_file))
 	{
 		
-		$sql="INSERT INTO tbl_uploads VALUES('','$final_file','$file_type','$new_size')";
+		$sql="INSERT INTO tbl_uploads VALUES('','$name','$final_file','$file_type','$new_size')";
 		if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
 } else {
@@ -32,7 +36,7 @@ if(isset($_POST['btn-upload']))
 		?>
 		<script>
 		
-		alert('successfully uploaded');
+		//alert('successfully uploaded');
 		
         window.location.href='index1.php?success';
         </script>

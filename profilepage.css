@@ -75,7 +75,7 @@ li.dropdown {
 
 .sidebar{
 	height:100%;
-	position: fixed;
+	position: absolute;
     width: 15%;
     text-align: left;
     background-color: #555;

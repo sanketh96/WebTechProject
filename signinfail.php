@@ -88,7 +88,7 @@
     }
   }
 	var exist=document.querySelector('.exists');
-	exist.innerHTML='The username already exists';
+	exist.innerHTML='The email already exists';
 </script>
 </body>
 </html>
